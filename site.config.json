@@ -1,0 +1,470 @@
+{
+  "brand": {
+    "name": "YOUR APP",
+    "shortName": "APP",
+    "description": "让日常工作更简单。"
+  },
+  "domain": "https://example.com",
+  "assets": {
+    "logo": "/brand/logo.svg",
+    "appIcon": "/brand/app-icon.svg",
+    "favicon": "/brand/favicon.svg",
+    "hero": "/brand/hero-app.svg",
+    "socialPreview": "/brand/social-preview.svg"
+  },
+  "navigation": [
+    {
+      "page": "home",
+      "href": "index.html",
+      "label": "首页"
+    },
+    {
+      "page": "features",
+      "href": "features.html",
+      "label": "功能介绍"
+    },
+    {
+      "page": "download",
+      "href": "download.html",
+      "label": "下载"
+    },
+    {
+      "page": "updates",
+      "href": "updates.html",
+      "label": "更新日志"
+    },
+    {
+      "page": "guides",
+      "href": "guides.html",
+      "label": "指南"
+    }
+  ],
+  "headerActions": [
+    {
+      "type": "theme",
+      "icon": "moon",
+      "label": "明暗模式"
+    },
+    {
+      "type": "link",
+      "icon": "mail",
+      "label": "联系我们",
+      "href": "@support"
+    },
+    {
+      "type": "link",
+      "icon": "github",
+      "label": "GitHub",
+      "href": "@github",
+      "newTab": true
+    }
+  ],
+  "hero": {
+    "title": "YOUR APP",
+    "subtitle": "让日常工作更简单。",
+    "description": "把常用工具与重要信息放在一起，用清晰的体验完成每一天的任务。",
+    "badge": "产品预览",
+    "primaryAction": {
+      "label": "前往下载",
+      "href": "download.html"
+    },
+    "secondaryAction": {
+      "label": "了解功能",
+      "href": "features.html"
+    },
+    "meta": [
+      "跨平台体验",
+      "轻松上手",
+      "持续完善"
+    ],
+    "visualTitle": "简单 · 清晰 · 高效",
+    "visualDescription": "为日常体验而设计",
+    "definition": "一款帮助你整理信息、专注任务与连接常用工具的产品。"
+  },
+  "features": [
+    {
+      "id": "essentials",
+      "kicker": "日常工具",
+      "title": "日常工具",
+      "description": "将常用功能放在触手可及的位置。",
+      "preview": true,
+      "headingClass": "section-heading anchor-target",
+      "titleClass": "section-title",
+      "showCount": true,
+      "gridClass": "feature-grid",
+      "items": [
+        {
+          "icon": "calendar-days",
+          "title": "功能 1.1",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "file-text",
+          "title": "功能 1.2",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "search",
+          "title": "功能 1.3",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "calendar-days",
+          "title": "功能 1.4",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "file-text",
+          "title": "功能 1.5",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "search",
+          "title": "功能 1.6",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        }
+      ]
+    },
+    {
+      "id": "workspace",
+      "kicker": "信息整理",
+      "title": "信息整理",
+      "description": "将常用功能放在触手可及的位置。",
+      "preview": true,
+      "headingClass": "section-heading anchor-target",
+      "titleClass": "section-title",
+      "showCount": true,
+      "gridClass": "feature-grid feature-grid-three",
+      "items": [
+        {
+          "icon": "calendar-days",
+          "title": "功能 2.1",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "file-text",
+          "title": "功能 2.2",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "search",
+          "title": "功能 2.3",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "kicker": "拓展能力",
+      "title": "拓展能力",
+      "description": "将常用功能放在触手可及的位置。",
+      "preview": false,
+      "headingClass": "section-heading compact anchor-target",
+      "titleClass": "",
+      "showCount": false,
+      "gridClass": "feature-grid feature-grid-two",
+      "items": [
+        {
+          "icon": "calendar-days",
+          "title": "功能 3.1",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "file-text",
+          "title": "功能 3.2",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        }
+      ]
+    },
+    {
+      "id": "shortcuts",
+      "kicker": "快捷体验",
+      "title": "快捷体验",
+      "description": "将常用功能放在触手可及的位置。",
+      "preview": true,
+      "headingClass": "section-heading compact anchor-target",
+      "titleClass": "",
+      "showCount": false,
+      "gridClass": "feature-grid feature-grid-two",
+      "items": [
+        {
+          "icon": "calendar-days",
+          "title": "功能 4.1",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        },
+        {
+          "icon": "file-text",
+          "title": "功能 4.2",
+          "description": "简要介绍这一功能能为用户带来的帮助。",
+          "image": "",
+          "imageAlt": ""
+        }
+      ]
+    }
+  ],
+  "download": {
+    "version": "0.1.0",
+    "displayVersion": "Preview 0.1",
+    "releaseDate": "",
+    "url": "",
+    "size": "",
+    "sha256": "",
+    "iosUrl": "",
+    "label": "下载应用",
+    "unavailableLabel": "下载即将开放",
+    "platform": "Android",
+    "enabledMessage": "安装包下载已启用。",
+    "disabledMessage": "当前版本暂未提供安装包，请稍后查看。"
+  },
+  "github": {
+    "url": "https://github.com"
+  },
+  "support": {
+    "email": "hello@example.com",
+    "subject": "产品联系反馈",
+    "complaintSubject": "产品问题反馈",
+    "alipaySupportUrl": "",
+    "wechatSupportUrl": "",
+    "alipayQrImage": "",
+    "wechatQrImage": "",
+    "community": {
+      "qqEnabled": false,
+      "qqPersonalNumber": "",
+      "qqPersonalUrl": "",
+      "qqGroupNumber": "",
+      "qqGroupUrl": "",
+      "qqGroupQrImage": ""
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 YOUR APP",
+    "filing": {
+      "icpNumber": "",
+      "icpUrl": "",
+      "publicSecurityNumber": "",
+      "publicSecurityUrl": "",
+      "publicSecurityIcon": ""
+    },
+    "links": [
+      {
+        "href": "privacy.html",
+        "label": "隐私说明"
+      },
+      {
+        "href": "terms.html",
+        "label": "使用条款"
+      },
+      {
+        "href": "manual.html",
+        "label": "产品手册"
+      },
+      {
+        "href": "contact.html",
+        "label": "联系反馈"
+      },
+      {
+        "href": "thanks.html",
+        "label": "鸣谢"
+      }
+    ],
+    "entries": [
+      {
+        "href": "guides.html",
+        "label": "使用指南",
+        "icon": "book-open",
+        "note": "常用操作与入门说明"
+      },
+      {
+        "href": "commercial.html",
+        "label": "合作交流",
+        "icon": "handshake",
+        "note": "沟通需求与合作方式"
+      },
+      {
+        "href": "thanks.html",
+        "label": "鸣谢",
+        "icon": "heart-handshake",
+        "note": "感谢每一份支持"
+      }
+    ]
+  },
+  "seo": {
+    "locale": "zh-CN",
+    "titleSuffix": "产品官网",
+    "description": "产品功能、下载、指南与支持。",
+    "indexable": false
+  },
+  "manual": {
+    "url": "guides.html"
+  },
+  "screenshots": [
+    {
+      "src": "/screenshots/01-home.svg",
+      "alt": "产品界面示例"
+    }
+  ],
+  "theme": {
+    "fonts": {
+      "sans": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+      "display": "var(--font-sans)",
+      "mono": "ui-monospace, SFMono-Regular, Consolas, monospace"
+    },
+    "light": {
+      "blue-700": "var(--color-primary-hover)",
+      "blue-600": "var(--color-primary)",
+      "blue-100": "#e8f2ff",
+      "blue-050": "#f5f9ff",
+      "ink-900": "var(--color-text)",
+      "ink-700": "var(--color-text-secondary)",
+      "ink-500": "#6d7e91",
+      "line": "var(--color-border)",
+      "white": "var(--color-background)",
+      "surface": "var(--color-background)",
+      "surface-raised": "var(--color-background)",
+      "surface-muted": "var(--color-surface)",
+      "surface-soft": "#f5f9ff"
+    },
+    "dark": {
+      "surface": "#0b1726",
+      "surface-raised": "#12243a",
+      "surface-muted": "#0f2033",
+      "surface-soft": "#142a43",
+      "nav-pill": "#172b41",
+      "ink-900": "#eef6ff",
+      "ink-700": "#c1d1e2",
+      "ink-500": "#8fa5bb",
+      "line": "#29415a",
+      "blue-100": "#183b61",
+      "blue-050": "#102840",
+      "white": "#ffffff",
+      "shadow": "0 24px 70px rgba(0, 0, 0, 0.32)",
+      "icon-filter": "brightness(0) saturate(100%) invert(88%) sepia(15%) saturate(591%) hue-rotate(177deg) brightness(101%) contrast(96%)"
+    },
+    "palette": {
+      "color-001": "var(--color-primary-hover)",
+      "color-002": "var(--color-primary)",
+      "color-003": "#e8f2ff",
+      "color-004": "#f5f9ff",
+      "color-005": "var(--color-text)",
+      "color-006": "var(--color-text-secondary)",
+      "color-007": "#6d7e91",
+      "color-008": "var(--color-border)",
+      "color-009": "var(--color-background)",
+      "color-010": "rgba(22, 61, 102, 0.13)",
+      "color-011": "rgba(219, 229, 239, 0.86)",
+      "color-012": "rgba(255, 255, 255, 0.96)",
+      "color-013": "#cfe0f1",
+      "color-014": "rgba(22, 61, 102, 0.05)",
+      "color-015": "#a9c8e6",
+      "color-016": "rgba(16, 32, 51, 0.24)",
+      "color-017": "rgba(16, 32, 51, 0.42)",
+      "color-018": "rgba(36, 110, 195, 0.22)",
+      "color-019": "#bfd4ea",
+      "color-020": "#7d8998",
+      "color-021": "#d8e0e8",
+      "color-022": "#edf1f5",
+      "color-023": "#d8e7f5",
+      "color-024": "rgba(255, 255, 255, 0.7)",
+      "color-025": "#cfdbe7",
+      "color-026": "#0c1724",
+      "color-027": "rgba(30, 67, 106, 0.15)",
+      "color-028": "#b8d2eb",
+      "color-029": "rgba(22, 61, 102, 0.08)",
+      "color-030": "var(--color-surface)",
+      "color-031": "#c9dcef",
+      "color-032": "rgba(31, 83, 138, 0.15)",
+      "color-033": "#9aabbc",
+      "color-034": "#9fc2e4",
+      "color-035": "#b9cce0",
+      "color-036": "rgba(36, 110, 195, 0.35)",
+      "color-037": "#edf2f6",
+      "color-038": "#0b1726",
+      "color-039": "#12243a",
+      "color-040": "#0f2033",
+      "color-041": "#142a43",
+      "color-042": "#172b41",
+      "color-043": "#eef6ff",
+      "color-044": "#c1d1e2",
+      "color-045": "#8fa5bb",
+      "color-046": "#29415a",
+      "color-047": "#183b61",
+      "color-048": "#102840",
+      "color-049": "rgba(0, 0, 0, 0.32)",
+      "color-050": "#071321",
+      "color-051": "#dcecff",
+      "color-052": "#203c59",
+      "color-053": "#c8e1ff",
+      "color-054": "#1c4168",
+      "color-055": "#3b638b",
+      "color-056": "#132a43",
+      "color-057": "#32475d",
+      "color-058": "#1b2b3c",
+      "color-059": "rgba(0, 0, 0, 0.65)",
+      "color-060": "#e0e8ef",
+      "color-061": "rgba(22, 61, 102, 0.06)",
+      "color-062": "rgba(255, 255, 255, 0.72)",
+      "color-063": "#ef5b68",
+      "color-064": "rgba(29, 94, 162, 0.13)",
+      "color-065": "#fff",
+      "color-066": "rgba(10, 27, 45, 0.38)",
+      "color-067": "rgba(11, 38, 67, 0.18)"
+    },
+    "colors": {
+      "primary": "#246ec3",
+      "primary-hover": "#1659a8",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "text": "#102033",
+      "text-secondary": "#40546b",
+      "border": "#dbe5ef"
+    }
+  },
+  "featureSections": [
+    {
+      "className": "section feature-section",
+      "containerClass": "container",
+      "groupIds": [
+        "essentials"
+      ]
+    },
+    {
+      "className": "section section-muted feature-section",
+      "containerClass": "container",
+      "groupIds": [
+        "workspace"
+      ]
+    },
+    {
+      "className": "section feature-section",
+      "containerClass": "container split-feature-sections",
+      "groupIds": [
+        "advanced",
+        "shortcuts"
+      ]
+    }
+  ]
+}

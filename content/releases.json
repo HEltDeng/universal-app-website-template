@@ -1,0 +1,13 @@
+[
+  {
+    "version": "Preview 0.1",
+    "status": "示例版本",
+    "releaseDate": "",
+    "current": true,
+    "summary": "在这里记录产品更新。",
+    "items": [
+      "功能改进说明",
+      "体验优化说明"
+    ]
+  }
+]

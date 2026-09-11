@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="{{site.seo.locale}}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{page.description}}" name="description"/>
+<meta content="{{page.title}}｜{{site.brand.name}} {{site.seo.titleSuffix}}" property="og:title"/>
+<meta content="{{page.description}}" property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>{{page.title}}｜{{site.brand.name}} {{site.seo.titleSuffix}}</title>
+<link href="{{site.assets.favicon}}" rel="icon"/>
+<link href="/assets/styles/site.css" rel="stylesheet"/>
+<script src="/assets/scripts/site.js" type="module"></script>
+<meta content="{{socialPreviewUrl}}" property="og:image"/><meta content="{{site.domain}}" property="og:url"/><link href="{{canonical}}" rel="canonical"/><meta content="{{robots}}" name="robots"/><link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main-content">{{page.text.skip_link_1}}</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="{{site.brand.name}}" class="brand" href="index.html">
+<img alt="" height="38" src="{{site.assets.logo}}" width="38"/>
+<span>{{site.brand.name}}</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="{{page.text.aria_label_16}}" class="menu-button" data-menu-button="" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="{{page.text.aria_label_17}}" class="site-nav" data-open="false" data-site-nav="" id="site-nav">{{#each site.navigation}}<a href="{{href}}" data-nav-page="{{page}}">{{label}}</a>{{/each}}</nav>
+</div>
+</header>
+<div class="container announcement-region" data-announcement-region="" hidden="">
+<button aria-controls="announcement-dialog" aria-haspopup="dialog" class="announcement-bar" data-announcement-trigger="" type="button">
+<svg aria-hidden="true" class="announcement-icon" focusable="false" viewbox="0 0 24 24"><path d="M4 10v4h3l4 3V7l-4 3H4Zm11.5-2.5a5 5 0 0 1 0 9M17.5 5a8.5 8.5 0 0 1 0 14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+<span class="announcement-label">{{page.text.announcement_label_1}}</span>
+<span aria-hidden="true" class="announcement-separator">{{page.text.announcement_separator_1}}</span>
+<span class="announcement-summary" data-announcement-summary=""></span>
+<span class="announcement-action">{{page.text.announcement_action_1}}<span aria-hidden="true">{{page.text.span_1}}</span></span>
+</button>
+</div>
+<dialog aria-describedby="announcement-dialog-content" aria-labelledby="announcement-dialog-title" aria-modal="true" class="announcement-dialog" data-announcement-dialog="" id="announcement-dialog">
+<div class="announcement-dialog-shell">
+<header class="announcement-dialog-header">
+<div class="announcement-dialog-heading">
+<p class="section-kicker">{{page.text.section_kicker_1}}</p>
+<h2 data-announcement-dialog-title="" id="announcement-dialog-title"></h2>
+<time class="announcement-dialog-date" data-announcement-date=""></time>
+</div>
+<button aria-label="{{page.text.aria_label_18}}" class="announcement-close" data-announcement-close="" type="button">{{page.text.announcement_close_1}}</button>
+</header>
+<div class="announcement-dialog-body" data-announcement-content="" id="announcement-dialog-content" tabindex="0"></div>
+<footer class="announcement-dialog-footer">
+<button class="button button-primary" data-announcement-confirm="" type="button">{{page.text.button_1}}</button>
+</footer>
+</div>
+</dialog>
+<main id="main-content">
+<section class="hero">
+<div class="container hero-inner">
+<div class="hero-copy">
+<h1>{{site.hero.title}}</h1>
+<p class="version-line"><span data-app-version="">{{site.download.displayVersion}}</span><span class="status-badge">{{site.hero.badge}}</span></p>
+<p class="hero-lead">{{site.hero.subtitle}}</p>
+<p class="hero-note">{{site.hero.description}}</p>
+<div aria-label="{{page.text.aria_label_19}}" class="hero-actions">
+<a class="button button-primary" href="{{site.hero.primaryAction.href}}">{{site.hero.primaryAction.label}}</a>
+<a class="button button-secondary" href="{{site.hero.secondaryAction.href}}">{{site.hero.secondaryAction.label}}</a>
+</div>
+<ul aria-label="{{page.text.aria_label_20}}" class="hero-meta">{{#each site.hero.meta}}<li>{{this}}</li>{{/each}}</ul>
+</div>
+<div aria-label="{{page.text.aria_label_21}}" class="hero-visual">
+<div class="phone-frame">
+<img alt="{{site.brand.name}} 产品预览" height="2664" src="{{site.assets.hero}}" width="1200"/>
+</div>
+<div aria-hidden="true" class="visual-card">
+<strong>{{site.hero.visualTitle}}</strong>
+<span>{{site.hero.visualDescription}}</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="features-preview">
+<div class="container">
+<p class="section-kicker section-question">{{page.text.section_kicker_2}}</p>
+<h2 class="section-title product-definition">{{site.hero.definition}}</h2>
+<div class="intro-grid">{{#each featurePreviews}}<a class="intro-card" href="features.html#{{id}}"><span>{{kicker}}</span><h3>{{title}}</h3><p>{{description}}</p></a>{{/each}}</div>
+<p class="statement"><strong>{{page.text.strong_1}}</strong>{{page.text.statement_1}}</p>
+</div>
+</section>
+<section class="section section-muted future-section">
+<div class="container future-card">
+<div><p class="section-kicker">{{page.text.section_kicker_3}}</p><h2>{{page.text.h2_1}}</h2></div>
+<p>{{page.text.p_1}}</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<strong>{{site.brand.name}}</strong>
+<span>{{page.text.span_2}}<span data-footer-version="">{{site.download.displayVersion}}</span></span>
+</div>
+<nav aria-label="{{page.text.aria_label_22}}" class="footer-links">{{#each site.footer.links}}<a href="{{href}}">{{label}}</a>{{/each}}</nav>
+</div>
+<div class="container footer-filing" data-filing=""></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="{{site.seo.locale}}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{page.description}}" name="description"/>
+<title>{{page.title}}｜{{site.brand.name}} {{site.seo.titleSuffix}}</title>
+<link href="{{site.assets.favicon}}" rel="icon"/>
+<link href="/assets/styles/site.css" rel="stylesheet"/>
+<script src="/assets/scripts/site.js" type="module"></script>
+<meta content="{{socialPreviewUrl}}" property="og:image"/><meta content="{{site.domain}}" property="og:url"/><link href="{{canonical}}" rel="canonical"/><meta content="{{robots}}" name="robots"/><link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body data-page="manual">
+<a class="skip-link" href="#main-content">{{page.text.skip_link_1}}</a>
+<header class="site-header"><div class="container header-inner"><a aria-label="{{site.brand.name}}" class="brand" href="index.html"><img alt="" height="38" src="{{site.assets.logo}}" width="38"/><span>{{site.brand.name}}</span></a><button aria-controls="site-nav" aria-expanded="false" aria-label="{{page.text.aria_label_26}}" class="menu-button" data-menu-button="" type="button"><span></span><span></span><span></span></button><nav aria-label="{{page.text.aria_label_27}}" class="site-nav" data-open="false" data-site-nav="" id="site-nav">{{#each site.navigation}}<a href="{{href}}" data-nav-page="{{page}}">{{label}}</a>{{/each}}</nav></div></header>
+<main id="main-content">
+<section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow">{{page.text.eyebrow_1}}</p><h1>{{page.text.h1_1}}</h1><p>{{page.text.p_1}}</p></div></section>
+<section class="section">
+<div class="container manual-layout">
+<article class="manual-card">
+<div class="manual-cover"><img alt="" src="/assets/icons/file-text.svg"/><span>{{page.text.span_1}}</span></div>
+<div class="manual-content"><p class="section-kicker">{{page.text.section_kicker_1}}</p><h2>{{page.text.h2_1}}<br/>{{page.text.h2_2}}</h2><dl class="manual-meta"><div><dt>{{page.text.dt_1}}</dt><dd>{{page.text.dd_1}}</dd></div><div><dt>{{page.text.dt_2}}</dt><dd>{{page.text.dd_2}}</dd></div><div><dt>{{page.text.dt_3}}</dt><dd>{{page.text.dd_3}}</dd></div></dl><div class="manual-actions"><a class="button button-primary" href="{{site.manual.url}}" rel="noopener" target="_blank">{{page.text.button_1}}</a><a class="button button-secondary" href="{{site.manual.url}}">{{page.text.button_2}}</a></div></div>
+</article>
+<aside class="manual-notes"><p class="section-kicker">{{page.text.section_kicker_2}}</p><h2>{{page.text.h2_3}}</h2><ul class="check-list"><li>{{page.text.li_1}}</li><li>{{page.text.li_2}}</li><li>{{page.text.li_3}}</li><li>{{page.text.li_4}}</li><li>{{page.text.li_5}}</li></ul><p>{{page.text.p_2}}</p></aside>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><strong>{{site.brand.name}}</strong><span>{{page.text.span_2}}<span data-footer-version="">{{site.download.displayVersion}}</span></span></div><nav aria-label="{{page.text.aria_label_28}}" class="footer-links">{{#each site.footer.links}}<a href="{{href}}">{{label}}</a>{{/each}}</nav></div><div class="container footer-filing" data-filing=""></div></footer>
+</body>
+</html>

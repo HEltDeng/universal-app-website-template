@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="{{site.seo.locale}}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{page.description}}" name="description"/>
+<title>{{page.title}}｜{{site.brand.name}} {{site.seo.titleSuffix}}</title>
+<link href="{{site.assets.favicon}}" rel="icon"/>
+<link href="/assets/styles/site.css" rel="stylesheet"/>
+<script src="/assets/scripts/site.js" type="module"></script>
+<meta content="{{socialPreviewUrl}}" property="og:image"/><meta content="{{site.domain}}" property="og:url"/><link href="{{canonical}}" rel="canonical"/><meta content="{{robots}}" name="robots"/><link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body data-page="features">
+<a class="skip-link" href="#main-content">{{page.text.skip_link_1}}</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="{{site.brand.name}}" class="brand" href="index.html"><img alt="" height="38" src="{{site.assets.logo}}" width="38"/><span>{{site.brand.name}}</span></a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="{{page.text.aria_label_30}}" class="menu-button" data-menu-button="" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="{{page.text.aria_label_31}}" class="site-nav" data-open="false" data-site-nav="" id="site-nav">{{#each site.navigation}}<a href="{{href}}" data-nav-page="{{page}}">{{label}}</a>{{/each}}</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="page-hero">
+<div class="container page-hero-inner">
+<p class="eyebrow">{{page.text.eyebrow_1}}<span data-app-version="">{{site.download.displayVersion}}</span></p>
+<h1>{{page.text.h1_1}}</h1>
+<p>{{page.text.p_1}}</p>
+</div>
+</section>
+{{#each featureSections}}<section class="{{className}}"><div class="{{containerClass}}">{{#each groups}}<div><div class="{{headingClass}}" id="{{id}}"><div><p class="section-kicker">{{kicker}}</p><h2 class="{{titleClass}}">{{title}}</h2></div>{{#if showCount}}<span class="section-count">{{count}} 项</span>{{/if}}</div><div class="{{gridClass}}">{{#each items}}<article class="feature-card"><span class="feature-icon"><img src="/assets/icons/{{icon}}.svg" alt=""></span><h3>{{title}}</h3><p>{{description}}</p>{{#if image}}<img src="{{image}}" alt="{{imageAlt}}" loading="lazy">{{/if}}</article>{{/each}}</div></div>{{/each}}</div></section>{{/each}}
+<section class="boundary-section">
+<div class="container boundary-card">
+<div><p class="section-kicker">{{page.text.section_kicker_4}}</p><h2>{{page.text.h2_3}}</h2></div>
+<p>{{page.text.p_9}}</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner"><div class="footer-brand"><strong>{{site.brand.name}}</strong><span>{{page.text.span_1}}<span data-footer-version="">{{site.download.displayVersion}}</span></span></div><nav aria-label="{{page.text.aria_label_32}}" class="footer-links">{{#each site.footer.links}}<a href="{{href}}">{{label}}</a>{{/each}}</nav></div>
+<div class="container footer-filing" data-filing=""></div>
+</footer>
+</body>
+</html>

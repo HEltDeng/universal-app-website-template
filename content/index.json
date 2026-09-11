@@ -1,0 +1,28 @@
+{
+  "title": "首页",
+  "description": "首页、产品说明与相关信息。",
+  "text": {
+    "skip_link_1": "跳到主要内容",
+    "announcement_label_1": "最新公告",
+    "announcement_separator_1": "·",
+    "announcement_action_1": "查看详情",
+    "span_1": "›",
+    "section_kicker_1": "最新公告",
+    "announcement_close_1": "×",
+    "button_1": "确认已读",
+    "section_kicker_2": "认识产品",
+    "strong_1": "产品简介：",
+    "statement_1": "以清晰的功能与易用的体验，帮助你完成日常任务。",
+    "section_kicker_3": "持续完善",
+    "h2_1": "持续倾听，稳步完善。",
+    "p_1": "倾听每一份反馈，让产品更贴近你的实际需要。",
+    "span_2": "版本",
+    "aria_label_16": "打开导航菜单",
+    "aria_label_17": "主要导航",
+    "aria_label_18": "关闭公告",
+    "aria_label_19": "版本入口",
+    "aria_label_20": "应用概要",
+    "aria_label_21": "产品信息",
+    "aria_label_22": "页脚导航"
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="{{site.seo.locale}}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{page.description}}" name="description"/>
+<title>{{page.title}}｜{{site.brand.name}} {{site.seo.titleSuffix}}</title>
+<link href="{{site.assets.favicon}}" rel="icon"/>
+<link href="/assets/styles/site.css" rel="stylesheet"/>
+<script src="/assets/scripts/site.js" type="module"></script>
+<meta content="{{socialPreviewUrl}}" property="og:image"/><meta content="{{site.domain}}" property="og:url"/><link href="{{canonical}}" rel="canonical"/><meta content="{{robots}}" name="robots"/><link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body data-page="guides">
+<a class="skip-link" href="#main-content">{{page.text.skip_link_1}}</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="{{site.brand.name}}" class="brand" href="index.html">
+<img alt="" height="38" src="{{site.assets.logo}}" width="38"/>
+<span>{{site.brand.name}}</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="{{page.text.aria_label_65}}" class="menu-button" data-menu-button="" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="{{page.text.aria_label_66}}" class="site-nav" data-open="false" data-site-nav="" id="site-nav">{{#each site.navigation}}<a href="{{href}}" data-nav-page="{{page}}">{{label}}</a>{{/each}}</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="page-hero compact-hero">
+<div class="container page-hero-inner">
+<p class="eyebrow">{{page.text.eyebrow_1}}</p>
+<h1>{{page.text.h1_1}}</h1>
+<p>{{page.text.p_1}}</p>
+</div>
+</section>
+<section class="section">
+<div class="container guide-layout">
+<aside aria-label="{{page.text.aria_label_67}}" class="guide-sidebar">
+<label class="guide-search-label" for="guide-search">{{page.text.guide_search_label_1}}</label>
+<div class="guide-search-wrap">
+<img alt="" height="18" src="/assets/icons/search.svg" width="18"/>
+<input autocomplete="off" data-guide-search="" id="guide-search" placeholder="{{page.text.placeholder_68}}" type="search"/>
+</div>
+<nav aria-label="{{page.text.aria_label_69}}" class="guide-nav">
+<a aria-current="location" data-guide-link="" href="#quickstart">{{page.text.a_1}}</a>
+<a data-guide-link="" href="#install">{{page.text.a_2}}</a>
+<a data-guide-link="" href="#account">{{page.text.a_3}}</a>
+<a data-guide-link="" href="#essentials">{{page.text.a_4}}</a>
+<a data-guide-link="" href="#advanced">{{page.text.a_5}}</a>
+<a data-guide-link="" href="#workspace">{{page.text.a_6}}</a>
+<a data-guide-link="" href="#privacy">{{page.text.a_7}}</a>
+<a data-guide-link="" href="#faq">{{page.text.a_8}}</a>
+</nav>
+</aside>
+<div class="guide-content">
+<p class="guide-empty" data-guide-empty="" hidden="">{{page.text.guide_empty_1}}</p>
+<article class="guide-article" data-guide-article="" id="quickstart">
+<p class="section-kicker">{{page.text.section_kicker_1}}</p>
+<h2>{{page.text.h2_1}}</h2>
+<p>{{page.text.p_2}}</p>
+<ul class="guide-list">
+<li>{{page.text.li_1}}</li>
+<li>{{page.text.li_2}}</li>
+<li>{{page.text.li_3}}</li>
+</ul>
+</article>
+<article class="guide-article" data-guide-article="" id="install">
+<p class="section-kicker">{{page.text.section_kicker_2}}</p>
+<h2>{{page.text.h2_2}}</h2>
+<p>{{page.text.p_3}}</p>
+<div class="guide-note"><strong>{{page.text.strong_1}}</strong>{{page.text.guide_note_1}}</div>
+</article>
+<article class="guide-article" data-guide-article="" id="account">
+<p class="section-kicker">{{page.text.section_kicker_3}}</p>
+<h2>{{page.text.h2_3}}</h2>
+<p>{{page.text.p_4}}</p>
+</article>
+<article class="guide-article" data-guide-article="" id="essentials">
+<p class="section-kicker">{{page.text.section_kicker_4}}</p>
+<h2>{{page.text.h2_4}}</h2>
+<p>{{page.text.p_5}}</p>
+<ul class="guide-list">
+<li><strong>{{page.text.strong_2}}</strong>{{page.text.li_4}}</li>
+<li><strong>{{page.text.strong_3}}</strong>{{page.text.li_5}}</li>
+<li><strong>{{page.text.strong_4}}</strong>{{page.text.li_6}}</li>
+<li><strong>{{page.text.strong_5}}</strong>{{page.text.li_7}}</li>
+<li><strong>{{page.text.strong_6}}</strong>{{page.text.li_8}}</li>
+</ul>
+</article>
+<article class="guide-article" data-guide-article="" id="advanced">
+<p class="section-kicker">{{page.text.section_kicker_5}}</p>
+<h2>{{page.text.h2_5}}</h2>
+<p>{{page.text.p_6}}</p>
+<div class="guide-note"><strong>{{page.text.strong_7}}</strong>{{page.text.guide_note_2}}</div>
+</article>
+<article class="guide-article" data-guide-article="" id="workspace">
+<p class="section-kicker">{{page.text.section_kicker_6}}</p>
+<h2>{{page.text.h2_6}}</h2>
+<p>{{page.text.p_7}}</p>
+<ul class="guide-list">
+<li><strong>{{page.text.strong_8}}</strong>{{page.text.li_9}}</li>
+<li><strong>{{page.text.strong_9}}</strong>{{page.text.li_10}}</li>
+<li><strong>{{page.text.strong_10}}</strong>{{page.text.li_11}}</li>
+<li><strong>{{page.text.strong_11}}</strong>{{page.text.li_12}}</li>
+</ul>
+</article>
+<article class="guide-article" data-guide-article="" id="privacy">
+<p class="section-kicker">{{page.text.section_kicker_7}}</p>
+<h2>{{page.text.h2_7}}</h2>
+<p>{{page.text.p_8}}</p>
+</article>
+<article class="guide-article" data-guide-article="" id="faq">
+<p class="section-kicker">{{page.text.section_kicker_8}}</p>
+<h2>{{page.text.h2_8}}</h2>
+<p>{{page.text.p_9}}</p>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<strong>{{site.brand.name}}</strong>
+<span>{{page.text.span_1}}<span data-footer-version="">{{site.download.displayVersion}}</span></span>
+</div>
+<nav aria-label="{{page.text.aria_label_70}}" class="footer-links">{{#each site.footer.links}}<a href="{{href}}">{{label}}</a>{{/each}}</nav>
+</div>
+<div class="container footer-filing" data-filing=""></div>
+</footer>
+</body>
+</html>
