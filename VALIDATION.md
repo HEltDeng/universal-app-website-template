@@ -1,3 +1,24 @@
+# Current validation — 2026-10-03
+
+The default Header now includes theme, email, announcement, QQ and GitHub actions. The QQ platform mark is retained to identify its contact entry. Public contact values remain empty; production data and deployment settings are excluded.
+
+| Check | Result | Scope |
+| --- | --- | --- |
+| Lint | PASS | Syntax, JSON and all page templates |
+| Test | PASS | 8 automated tests, including public QR paths, traversal rejection and brand-derived dialog text |
+| Build | PASS | All 12 static pages |
+| Desktop | PASS | 1440×900; five Header actions, QQ empty state and close behavior on all 12 pages |
+| Mobile | PASS | 390×844; drawer-to-QQ transition, Escape close and no horizontal overflow on all 12 pages |
+| Configured QQ | PASS | Both viewports: custom brand displayed as text, local brand image loaded, group number copied and external link attributes verified |
+| Announcement | PASS | Empty feed disables the shortcut; configured local feed opens and acknowledges the dialog |
+| Console / assets | PASS | Zero browser errors or failed asset requests |
+
+All fixture changes were restored. The test group number was a dummy value; the test image was an app-icon SVG used only to verify the image path, not a real QR code. No message was sent and no group was joined. CSS, spacing and breakpoints were unchanged. Source provenance and screenshots remain outside this repository.
+
+The historical report below describes the initial three-action defaults and is retained as dated evidence. Its default-action count is superseded by this update. Repository visibility and public-readiness restrictions are unchanged.
+
+---
+
 # Template validation
 
 Validation date: 2026-09-11.

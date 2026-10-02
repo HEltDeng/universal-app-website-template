@@ -1,5 +1,6 @@
 const escapeText = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 import site from '../../site.config.json';
+import { localCommunityImage, communityBrandText } from './community.mjs';
 import announcements from '../../content/announcements.json';
 import releases from '../../content/releases.json';
 const runtimeConfig = { ...site.download, androidDownloadUrl:site.download.url, apkSize:site.download.size, apkSha256:site.download.sha256, iosStatus:site.download.iosUrl ? 'open' : 'coming-soon', iosDownloadUrl:site.download.iosUrl, contact:{}, community:{...site.support.community, githubUrl:site.github.url}, filing:site.footer.filing, releases };
@@ -499,12 +500,8 @@ const setupCommunityActions = (config = {}) => {
       return '';
     }
   };
-  const asLocalImage = (value) => {
-    const source = trimValue(value);
-    return /^\/assets\/(?:images|icons)\/[a-z0-9][a-z0-9._/-]*$/i.test(source)
-      ? source
-      : '';
-  };
+  const asLocalImage = localCommunityImage;
+  const brandText = communityBrandText(site.brand.name);
 
   const githubUrl = asHttpsUrl(community.githubUrl);
   const qqEnabled = community.qqEnabled === true;
@@ -551,7 +548,7 @@ const setupCommunityActions = (config = {}) => {
           <div class="qq-dialog-heading">
             <span class="qq-dialog-brand" aria-hidden="true">${createIconImage('qq').outerHTML}</span>
             <div>
-              <h2 id="qq-dialog-title">加入“产品”QQ 交流群</h2>
+              <h2 id="qq-dialog-title"></h2>
               <p class="qq-dialog-intro" id="qq-dialog-intro" data-qq-intro></p>
             </div>
           </div>
@@ -569,8 +566,9 @@ const setupCommunityActions = (config = {}) => {
 
   const renderQqDialog = () => {
     body.replaceChildren();
+    dialog.querySelector('#qq-dialog-title').textContent = brandText.title;
     intro.textContent = hasQqContact
-      ? '交流使用体验、反馈问题，或获取“产品”的最新消息。'
+      ? brandText.introduction
       : 'QQ 联系入口已经预留，公开的 QQ 号、群链接或二维码将在配置完成后显示。';
 
     if (!hasQqContact) {
@@ -657,7 +655,7 @@ const setupCommunityActions = (config = {}) => {
       figure.className = 'qq-qr-frame';
       const image = document.createElement('img');
       image.src = qqGroupQrImage;
-      image.alt = '产品 QQ 交流群二维码';
+      image.alt = brandText.imageAlt;
       image.loading = 'lazy';
       figure.append(image);
       const caption = document.createElement('figcaption');

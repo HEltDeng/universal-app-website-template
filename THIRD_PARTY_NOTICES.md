@@ -2,7 +2,7 @@
 
 ## Lucide interface icons
 
-The interface SVG icons are distributed under the following upstream notices. The neutral community icon is a copy of the mail icon.
+The interface SVG icons are distributed under the following upstream notices. The QQ and GitHub platform marks are separately described below.
 
 ISC License
 
@@ -49,9 +49,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## GitHub platform mark
+## QQ and GitHub platform marks
 
-The GitHub mark identifies a link to GitHub. GitHub retains its trademarks. No endorsement is implied. Replace or remove the configurable action if your usage does not require this platform.
+The QQ mark identifies the QQ contact entry and the GitHub mark identifies a link to GitHub. Their respective owners retain their trademarks. No endorsement is implied. Replace or remove the configurable action if your usage does not require this platform.
 
 ## Template assets
 

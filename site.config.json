@@ -52,6 +52,16 @@
       "href": "@support"
     },
     {
+      "type": "announcement",
+      "icon": "bell-ring",
+      "label": "公告"
+    },
+    {
+      "type": "community",
+      "icon": "qq",
+      "label": "QQ 联系"
+    },
+    {
       "type": "link",
       "icon": "github",
       "label": "GitHub",

@@ -30,7 +30,7 @@ npm run dev
 | 字体 | `theme.fonts` |
 | 主题颜色 | `theme.colors`；暗色 `theme.dark` |
 | 顶部导航 | `navigation` |
-| 右上角三个图标 | `headerActions` |
+| 右上角快捷图标 | `headerActions` |
 | 首页 | `hero` 与 `content/index.json` |
 | 功能 | `features`；分区布局选择 `featureSections` |
 | 下载 | `download` |
@@ -73,21 +73,23 @@ npm run dev
 
 编辑 `navigation` 数组，每项为 `{ "page": "features", "href": "features.html", "label": "功能介绍" }`。首页的 `page` 值为 `home`。其他页面值与文件名一致。导航顺序同步到桌面和移动端，当前页面有 Active 状态。移动端保留汉堡按钮、遮罩、左侧抽屉、关闭按钮、Escape 与快捷入口。
 
-## 修改右上角三个图标
+## 修改右上角快捷图标
 
-编辑 `site.config.json` 的 `headerActions`。默认依次为明暗、联系、GitHub。位置、点击区域、Hover、Tooltip 和移动适配由保留的 Header 样式控制，不需要改组件。
+编辑 `site.config.json` 的 `headerActions`。默认依次为明暗、联系、公告、QQ、GitHub，共五个入口。位置、点击区域、Hover、Tooltip 和移动适配由保留的 Header 样式控制，不需要改组件。
 
 ```json
 [
   { "type": "theme", "icon": "moon", "label": "明暗模式" },
   { "type": "link", "icon": "mail", "label": "联系我们", "href": "@support" },
+  { "type": "announcement", "icon": "bell-ring", "label": "公告" },
+  { "type": "community", "icon": "qq", "label": "QQ 联系" },
   { "type": "link", "icon": "github", "label": "GitHub", "href": "@github", "newTab": true }
 ]
 ```
 
-`@support` 读取 `support.email`，`@github` 读取 `github.url`，也可直接写页面、HTTPS 或 mailto 地址。`newTab: true` 自动添加 `noopener noreferrer`。`icon` 填 `public/assets/icons/` 内 SVG 的文件名，不带扩展名。可按同样结构替换三项，或按需增减；图标数量较多或标题过长时请复查手机布局。
+`@support` 读取 `support.email`，`@github` 读取 `github.url`，也可直接写页面、HTTPS 或 mailto 地址。`newTab: true` 自动添加 `noopener noreferrer`。`icon` 填 `public/assets/icons/` 内 SVG 的文件名，不带扩展名。可按同样结构替换各项，或按需增减；图标数量较多或标题过长时请复查手机布局。
 
-可选类型：`announcement`（图标建议 `bell-ring`，读取本地公告），`community`（读取 `support.community`，显示可选联系弹窗）。移动端明暗按钮保留在 Header，其余入口随原模式出现在抽屉中。类型对应的状态提示（如明暗或无公告）由交互逻辑动态更新。
+已启用的功能类型：`announcement`（图标建议 `bell-ring`，读取本地公告），`community`（读取 `support.community`，显示可选联系弹窗）。移动端明暗按钮保留在 Header，其余入口随原模式出现在抽屉中。类型对应的状态提示（如明暗或无公告）由交互逻辑动态更新。
 
 ## 修改首页
 
@@ -116,6 +118,25 @@ npm run dev
 ## 修改联系方式
 
 修改 `support.email`、邮件主题 `subject` 和 `complaintSubject`。默认 `hello@example.com` 是占位地址，不能用于真实收件。可选支持页二维码/链接在 `support` 内配置；留空保留空状态，不会联系任何生产服务。
+
+## 配置 QQ 联系按钮
+
+默认 Header 已显示 QQ 图标；手机端入口在汉堡菜单内。点击后使用既有弹窗展示联系人、群号和二维码；不会直接发送消息或自动加入群聊。
+
+在 `support.community` 中设置：
+
+| 字段 | 含义 |
+| --- | --- |
+| `qqEnabled` | 设置为 true 后展示已配置的联系方式；默认 false 显示待配置状态 |
+| `qqPersonalNumber` | 对外公开的个人 QQ 号，可留空 |
+| `qqPersonalUrl` | 个人联系的 HTTPS 链接，可留空 |
+| `qqGroupNumber` | 对外公开的群号，可复制 |
+| `qqGroupUrl` | QQ 官方生成的 HTTPS 加群链接 |
+| `qqGroupQrImage` | 站内二维码图片，例如 `/brand/qq-group.png` |
+
+把二维码放到 `public/brand/qq-group.png`，配置路径不带 public。也支持 `/screenshots/` 及原有 `/assets/images/`、`/assets/icons/` 目录。二维码路径不接受外链、目录跳转或编码路径。模板不附带真实群号、加群地址或二维码。
+
+弹窗标题、说明和图片替代文字自动使用 `brand.name`。不需要 QQ 时，从 `headerActions` 删除 `type: "community"` 的项即可。公告数组为空时，公告按钮保持禁用状态；填入本地公告后自动启用。
 
 ## 修改 Footer
 
